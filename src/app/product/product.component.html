@@ -1,10 +1,13 @@
-<!-- Bootstrap card component -->
-<div class="card">
-    <div class="card-header">
+<!-- Bootstrap card found in component -->
+
+<!--IF  grid view  -->
+<div class="grid-view" *ngIf="view == 'grid'">
+    <div class="card">
+    <div class="card-header fw-bold fs-5 text-success">
         Header
     </div>
 
-    <div>
+    <div class="overflow-hidden d-flex justify-content-center align-items-center">
     <img src="../../assets/images/mobiles/10/1.jpg" alt="" class="card-img-top">
     </div>
     
@@ -22,4 +25,40 @@
      <div class="card-footer d-grid gap-2">
         <button class="btn btn-outline-success" type="button">Add to card-text</button>
      </div>
+</div>
+</div>
+<!--IF  list view  -->
+<div class="list-view" *ngIf="view == 'list'">
+    <div class="card">
+       
+    <div class="row">
+        <div class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center" >
+        <img src="../../assets/images/mobiles/10/1.jpg" alt="" class="card-img-top">
+        </div>
+        <div class="col">
+            <div class="card-header border-0">
+                Header
+            </div>
+    
+            <div class="card-body">
+                <h5 class="card-title title">Title</h5>
+                <h6 class="card-subtitle my-2 text-primary">12 pproducts are availble</h6>
+                <p class="card-text description">Description</p>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title text-muted">Pricing</h4>
+                  <h2 class="card-title text-success"> Final Price
+                  <span class="text-danger">-20%</span>
+                  </h2>
+                  <h5 class="card-subtitle text-danger text-decoration-line-through">Orginal Price</h5>            
+              </div>
+               <div class="card-footer d-grid gap-2 border-0">
+                  <button class="btn btn-outline-success" type="button">Add to card-text</button>
+               </div>   
+        </div>
+    </div>
+
+   
+       
+    </div>
 </div>
