@@ -7,10 +7,10 @@ import { Category } from '../models/models';
   styleUrls: ['./suggested-products.component.css']
 })
 export class SuggestedProductsComponent {
-@Input() category:Category={
-  id:0,
-  category:'',
-  subcategory:'',
-};
-  @Input() count:number=3;
+  @Input() category: Category = {
+    id: 0,
+    category: '',
+    subcategory: '',
+  };
+  @Input() count: number = 3;
 }
